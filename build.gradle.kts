@@ -75,7 +75,7 @@ dependencies {
 
     compileOnly("org.jetbrains:annotations:24.1.0")
 
-    implementation("com.github.milkdrinkers:crate:1.2.1")
+    implementation("com.github.milkdrinkers:crate:2.1.0")
     implementation("com.github.milkdrinkers:colorparser:2.0.3")
 
 //    implementation("dev.jorel:commandapi-bukkit-shade:9.0.3")
