@@ -87,7 +87,7 @@ dependencies {
     }
 
     compileOnly("com.palmergames.bukkit.towny:towny:0.100.3.12")
-    compileOnly("com.bencodez:votingplugin:6.15.1") {
+    compileOnly("com.bencodez:votingplugin:6.18") {
         exclude(group = "*", module = "*")
     }
     compileOnly("com.github.MilkBowl:VaultAPI:1.7.1")
