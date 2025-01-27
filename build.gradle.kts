@@ -97,7 +97,7 @@ dependencies {
     compileOnly("nl.rutgerkok:blocklocker:1.12.1")
     compileOnly("io.lumine:Mythic-Dist:5.6.2")
     compileOnly(files("lib/SiegeEngines-0.8.4.jar"))
-    compileOnly("com.github.Xiao-MoMi:Custom-Fishing:2.2.26")
+    compileOnly("com.github.Xiao-MoMi:Custom-Fishing:2.3.3")
     compileOnly("com.palmergames.bukkit:TownyChat:0.115")
 }
 
