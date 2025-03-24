@@ -24,7 +24,7 @@ java {
 repositories {
     mavenCentral()
 
-    maven("https://papermc.io/repo/repository/maven-public/")
+    maven("https://repo.papermc.io/repository/maven-public/")
 
     maven("https://jitpack.io/") {
         content {
@@ -36,6 +36,8 @@ repositories {
             includeGroup("com.github.Xiao-MoMi")
         }
     }
+
+    maven("https://repo.momirealms.net/releases/")
 
     maven("https://repo.codemc.org/repository/maven-public/") {
         content { includeGroup("dev.jorel") }
@@ -52,9 +54,7 @@ repositories {
         }
     }
 
-    maven("https://nexus.bencodez.com/repository/maven-public/") {
-        content { includeGroup("com.bencodez") }
-    }
+    maven("https://nexus.bencodez.com/repository/maven-public/")
 
     maven("https://repo.essentialsx.net/releases/")
     maven("https://repo.essentialsx.net/snapshots/")
@@ -87,7 +87,7 @@ dependencies {
     }
 
     compileOnly("com.palmergames.bukkit.towny:towny:0.100.3.12")
-    compileOnly("com.bencodez:votingplugin:6.15.1") {
+    compileOnly("com.bencodez:votingplugin:6.16.3") {
         exclude(group = "*", module = "*")
     }
     compileOnly("com.github.MilkBowl:VaultAPI:1.7.1")
@@ -97,7 +97,7 @@ dependencies {
     compileOnly("nl.rutgerkok:blocklocker:1.12.1")
     compileOnly("io.lumine:Mythic-Dist:5.6.2")
     compileOnly(files("lib/SiegeEngines-0.8.4.jar"))
-    compileOnly("com.github.Xiao-MoMi:Custom-Fishing:2.2.26")
+    compileOnly("net.momirealms:custom-fishing:2.3.3")
     compileOnly("com.palmergames.bukkit:TownyChat:0.115")
 }
 
