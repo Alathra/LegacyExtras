@@ -24,12 +24,20 @@ public class AnvilListener implements Listener {
                 p.closeInventory();
                 p.sendMessage(Helper.Chatlabel() + Helper.color("&cYou cannot put the Player's Guide in an anvil!"));
 
-            } else if (shulkerBoxMaterials.contains(e.getInventory().getItem(0).getType()) || shulkerBoxMaterials.contains(e.getInventory().getItem(1).getType())) {
-                e.setResult(new ItemStack(Material.AIR));
-
-                p.closeInventory();
-                p.sendMessage(Helper.Chatlabel() + Helper.color("&cYou cannot put a shulker box in an anvil!"));
             }
         }
+        if ((e.getInventory().getItem(0)) != null && shulkerBoxMaterials.contains(e.getInventory().getItem(0).getType())
+            || (e.getInventory().getItem(1)) != null && shulkerBoxMaterials.contains(e.getInventory().getItem(1).getType())) {
+            closeInventory(e, p);
+        }
+
     }
+
+    private static void closeInventory(PrepareAnvilEvent e, Player p) {
+        e.setResult(new ItemStack(Material.AIR));
+
+        p.closeInventory();
+        p.sendMessage(Helper.Chatlabel() + Helper.color("&cYou cannot put a shulker box in an anvil!"));
+    }
+    
 }
