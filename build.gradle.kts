@@ -82,7 +82,7 @@ dependencies {
 //    compileOnly("dev.jorel:commandapi-annotations:9.0.3")
 //    annotationProcessor("dev.jorel:commandapi-annotations:9.0.3")
 
-    compileOnly("net.citizensnpcs:citizens-main:2.0.35-SNAPSHOT") {
+    compileOnly("net.citizensnpcs:citizens-main:2.0.38-SNAPSHOT") {
         exclude(group = "*", module = "*")
     }
 
