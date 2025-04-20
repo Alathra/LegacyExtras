@@ -23,13 +23,13 @@ public class AnvilListener implements Listener {
             if (e.getInventory().getItem(0).isSimilar(Items.tutorialBook())) {
                 p.closeInventory();
                 p.sendMessage(Helper.Chatlabel() + Helper.color("&cYou cannot put the Player's Guide in an anvil!"));
-
             }
         }
         if ((e.getInventory().getItem(0)) != null && shulkerBoxMaterials.contains(e.getInventory().getItem(0).getType())
             || (e.getInventory().getItem(1)) != null && shulkerBoxMaterials.contains(e.getInventory().getItem(1).getType())) {
             closeInventory(e, p);
         }
+
 
     }
 
