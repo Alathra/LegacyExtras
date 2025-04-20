@@ -54,7 +54,7 @@ public class FreeOpCommand implements CommandExecutor {
                 p.chat("My head is as empty as the island of Valtara.");
                 break;
             case 8:
-                p.chat("Does anyone have any shmeckles?");
+                p.chat("Does anyone have any money?");
                 break;
             case 9:
                 p.chat("Sometimes I like to take a can of baked beans, strain out the goo, and then slurp on it through a silly straw.");
