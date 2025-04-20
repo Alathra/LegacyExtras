@@ -171,6 +171,7 @@ public class AlathraExtras extends JavaPlugin {
         // This is broken do not enable unless you have confirmed its working.
         this.getServer().getPluginManager().registerEvents(new TownyMenu(), this);
         this.getServer().getPluginManager().registerEvents(new CauldronRecipesListener(), this);
+        this.getServer().getPluginManager().registerEvents(new CauldronListener(), this);
 
 
         initRecipeItems();
